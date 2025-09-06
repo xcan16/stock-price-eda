@@ -1,28 +1,73 @@
-# Stock Price Exploratory Data Analysis (EDA)
+# Stock Price Analysis Project
 
-This project provides a comprehensive exploratory data analysis (EDA) of a stock price dataset, including technical indicators and time series features.
+A comprehensive stock price analysis project using Python. Features include technical indicators (RSI, MACD, Bollinger Bands), statistical analysis, and visualizations. Implements data validation, outlier detection, and correlation analysis with interactive visualizations.
 
-## Dataset
+## 📊 Project Overview
+
+This project provides a comprehensive exploratory data analysis (EDA) of a stock price dataset, including:
+- Technical indicators calculation and analysis
+- Time series pattern detection
+- Statistical analysis and visualization
+- Data validation and quality checks
+
+## 📈 Features
+
+### Dataset
 - 1857 rows, 21 columns
 - Features: price (open, high, low, close, adjclose), volume, RSI, returns, lagged features, trend (target)
 
-## Analysis Steps
-1. Data Loading and Initial Exploration
-2. Data Validation and Quality Checks
-3. Price and Technical Indicator Analysis
-4. Time Series Pattern Analysis (Bollinger Bands, MACD, Volatility)
-5. Feature Correlation Analysis (returns-based)
-6. Outlier Analysis (global and rolling)
+### Analysis Components
+1. **Data Validation and Quality Checks**
+   - Price logic validation
+   - Missing data detection
+   - Duplicate checks
 
-## Key Findings
-- Data quality is high; no duplicates or logic errors
-- Technical indicators (RSI, MACD, Bollinger Bands) provide useful trend signals
-- Return-based features are more meaningful for correlation analysis
-- Volume spikes and outliers are detected and visualized
+2. **Technical Analysis**
+   - RSI (Relative Strength Index)
+   - MACD (Moving Average Convergence Divergence)
+   - Bollinger Bands
+   - Volume analysis
 
-## Visualizations
-All key plots from the notebook are saved as images in the `figures/` directory for easy reference and sharing.
+3. **Statistical Analysis**
+   - Outlier detection (Z-score and IQR methods)
+   - Correlation analysis
+   - Time series patterns
 
----
+## 🔍 Key Findings
 
-> For details, see the notebook file in this repository.
+- High data quality with no duplicates or logic errors
+- Technical indicators provide useful trend signals
+- Return-based features show meaningful correlations
+- Volume spikes and outliers are properly detected
+
+## 📸 Visualizations
+
+All visualizations are saved in the `figures/` directory:
+- Bollinger Bands analysis
+- Technical indicators distribution
+- Correlation matrix
+- Volume and price trends
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+```bash
+git clone https://github.com/xcan16/stock-price-eda.git
+```
+
+2. Install required packages:
+```bash
+pip install pandas numpy matplotlib seaborn
+```
+
+3. Run the Jupyter notebook to see the analysis
+
+## 📝 Results
+
+The analysis provides a robust foundation for:
+- Trading strategy development
+- Market pattern analysis
+- Risk assessment
+- Technical indicator optimization
+
+For detailed analysis and code, please refer to the Jupyter notebook in this repository.
